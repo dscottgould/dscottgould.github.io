@@ -1,11 +1,16 @@
 ---
 layout: default
 title: IG Omega's Documents
+
+asciidoc_attributes: &asciidoc_attributes
+  docsdir: /documents
+asciidoctor:
+  attributes: *asciidoc_attributes
 ---
 	<h1>{{ page.title }}</h1>
 	<ul class="documents">
 
-	  {% for doc in site.documents %}
+	  {% for doc in site.asciidoc_attributes.docsdir %}
 	    <li><span>{{ doc.date | date_to_string }}</span> » <a href="{{ doc.url }}" title="{{ doc.title }}">{{ doc.title }}</a></li>
 	  {% endfor %}
 	</ul>
