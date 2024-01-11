@@ -1,0 +1,50 @@
+= Installing a Juptyer Environment on Native Windows
+
+Gaa I hate linux…after fighting with this a few days, I’ve figured out how to get the GPU working in Jupyter with this project and Native Windows:
+
+== Tips:
+1)  Use Miniconda rather than Anaconda because Anaconda is so bloated with packages and crap you don’t need yet and it just takes forever to install and debug things on an older machine.
+2)  Remove any installations of Python, GIT or Anaconda and start with a clean environment - You can install anything you need again later.
+
+== Software Needed:
+https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe[Miniconda]
+
+https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/PortableGit-2.43.0-64-bit.7z.exe[Portable Git]
+
+. Use Portable Git to download project into a working directory.
+. Install Miniconda.
+. Make sure your NVIDIA drivers are updated on the OS.
+
+== Installation:
+. Open Miniconda’s Powershell Prompt.
+. Check that the environment can see your card with:
+ [source, PowerShell]
+ --
+ nvidia-smi
+ --
+  If it cannot see your card it may not be compatible or something else is wrong.
+. Create a Python 3.9 Environment to install CUDA and Tensorflow 2.10.1:
+
+[source, PowerShell]
+--
+conda create --name tf python=3.9
+conda deactivate
+conda activate tf
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+python.exe -m pip install --upgrade pip
+pip install "tensorflow<2.11"
+--
+
+This will also install any Visual Studio requirements as well automatically.
+
+
+
+== Section Title
+
+* A list item
+* Another list item
+
+[,ruby]
+----
+puts 'Hello, World!'
+----
