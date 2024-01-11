@@ -17,3 +17,7 @@ asciidoctor:
     idseparator: _
     stylesdir: css
     source-highlighter: coderay
+
+collections:
+  documents:
+     output: true
