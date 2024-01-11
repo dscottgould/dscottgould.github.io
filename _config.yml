@@ -10,7 +10,7 @@ exclude:
 - Rakefile
 asciidoc: {}
 asciidoctor:
-  base_dir: :docdir
+  base_dir: :docs
   safe: unsafe
   attributes:
     icons: font
