@@ -1,4 +1,6 @@
+//
 // this comment line is ignored
+//
 = Installing a Juptyer Environment on Native Windows
 Donald Scott Gould <gould.dscott@gmail.com> 
 :description: The document's description. 

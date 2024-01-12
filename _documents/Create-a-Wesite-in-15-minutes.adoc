@@ -1,4 +1,6 @@
+//
 // this comment line is ignored
+//
 = Create a Website in 10 Minutes
 Donald Scott Gould <gould.dscott@gmail.com> 
 :description: The document's description. 
