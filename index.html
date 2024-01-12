@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Donald Scott Gould</title>
-		<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-		<meta name="author" content="Your name goes here">
-		<meta name="copyright" content="Maybe consider a Creative Commons license">
-		<link rel="stylesheet" href="/css/foundation.css">
-		<style>pre > code { border: 0 }</style>
-		<link rel="stylesheet" href="/css/fontawesome.css">
-		<link rel="stylesheet" href="/css/coderay.css">
-		<link rel="stylesheet" href="/css/asciidoctor.css">
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
 
-		<script src="/js/vendor/modernizr.js"></script>
-		<script src="/js/toc.js"></script>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/resume">Resume</a></li>
-        		<li><a href="/blog">Blog</a></li>
-				<li><a href="/docs/">Documents</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-			<img src="images\IGOmega.jpg" alt="IG Omega" width="300" height="300"> 
-    		<div class="blurb">
-        		<h1>Hi there, I'm IG-Omega!</h1>
-				<p>I am The Protector of the Realm.</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-				<li><a href="https://dscottgould.github.io/">Website: https://dscottgould.github.io/</a></li>
-        		<li><a href="mailto:gould.dscott@gmail.com">eMail: gould.dscott@gmail.com</a></li>
-				<li><a href="https://www.linkedin.com/in/dscottgould/">Linkedin: https://www.linkedin.com/in/dscottgould/</a></li>
-			</ul>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donald Scott Gould</title>
+	<meta name="description"
+		content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="author" content="Your name goes here">
+	<meta name="copyright" content="Maybe consider a Creative Commons license">
+	<link rel="stylesheet" href="/css/foundation.css">
+	<style>
+		pre>code {
+			border: 0
+		}
+	</style>
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/coderay.css">
+	<link rel="stylesheet" href="/css/asciidoctor.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 
-			Site Created by Donald Scott Gould.<br />
-			AsciiDoc, MarkDown and HTML Markup Compatible.<br />
-			Powered by Jekyll and Liquid.
-		</footer>
-	</body>
+	<script src="/js/vendor/modernizr.js"></script>
+	<script src="/js/toc.js"></script>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/resume">Resume</a></li>
+			<li><a href="/blog">Blog</a></li>
+			<li><a href="/docs/">Documents</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<img src="images\IGOmega.jpg" alt="IG Omega" width="300" height="300">
+		<div class="blurb">
+			<h1>Hi there, I'm IG-Omega!</h1>
+			<p>I am The Protector of the Realm.</p>
+		</div><!-- /.blurb -->
+	</div><!-- /.container -->
+	<footer>
+		<ul>
+			<li><a href="https://dscottgould.github.io/">Website: https://dscottgould.github.io/</a></li>
+			<li><a href="mailto:gould.dscott@gmail.com">eMail: gould.dscott@gmail.com</a></li>
+			<li><a href="https://www.linkedin.com/in/dscottgould/">Linkedin:
+					https://www.linkedin.com/in/dscottgould/</a></li>
+		</ul>
+
+		Site Created by Donald Scott Gould.<br />
+		AsciiDoc, MarkDown and HTML Markup Compatible.<br />
+		Powered by Jekyll and Liquid.
+	</footer>
+
+	<!-- link to other scripts -->
+	<script src="{{page.root}}/js/vendor/jquery.js"></script>
+	<script src="{{page.root}}/js/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+		var doc = document.documentElement;
+		doc.setAttribute('data-useragent', navigator.userAgent);
+	</script>
+</body>
+
 </html>
