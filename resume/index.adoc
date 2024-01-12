@@ -2,5 +2,6 @@
 layout: default
 title: IG Omega's Resume
 ---
-	<h1>{{ page.title }}</h1>
-	<p>I like to shoot stuff.</p>
+- IG Omega's Resume
+
+- I like to shoot stuff.
