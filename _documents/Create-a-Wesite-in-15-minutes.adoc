@@ -1,8 +1,11 @@
-THIS IS A TEST
+// this comment line is ignored
+= Create a Website in 10 Minutes
+Donald Scott Gould <gould.dscott@gmail.com> 
+:description: The document's description. 
+:sectanchors: 
+:url-repo: https://my-git-repo.com 
 
-= The Best is 
-
-=== Yet to Come
+== The Best is Yet to Come
 
 . One
 . Two
