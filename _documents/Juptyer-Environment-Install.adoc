@@ -1,6 +1,7 @@
 //
 // Header
 //
+...
 = Installing a Juptyer Environment on Native Windows
 :doctype: book
 :front-cover-image: image::images/cover.jpg[]
