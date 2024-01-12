@@ -5,11 +5,12 @@
 = IG Omega's Resume
 
 - I like to shoot stuff.
-- I like to babsysit kittens on weekends.
+- I like to babysit kittens on weekends.
 
 === Skills
-- High Speed Targeting
-- No Need For Sleep
+- High Speed Targeting.
+- No Need For Sleep.
+- Can Canculate Pi to the power of Pi.
 
 . Testing One
 . Two
