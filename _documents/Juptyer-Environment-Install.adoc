@@ -111,7 +111,7 @@ python -m ipykernel install --name=imageclass
 --
 This will copy all the modules/libraries into the Juptyer environment.
 
-[start=7]
+[start=8]
 . Activate the Juptyer environment:
 
 [source, PowerShell]
