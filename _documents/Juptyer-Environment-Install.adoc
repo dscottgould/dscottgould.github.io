@@ -1,12 +1,13 @@
 //
 // Header
 //
+= Installing a Juptyer Environment on Native Windows
 Donald Scott Gould <gould.dscott@gmail.com> 
+:doctype: book
 :description: The document's description. 
 :sectanchors: 
 :url-repo: https://my-git-repo.com 
 
-= Installing a Juptyer Environment on Native Windows
 Gaa I hate linux…after fighting with this a few days, I’ve figured out how to get the GPU working in Jupyter with this project and Native Windows:
 
 == Tips:
