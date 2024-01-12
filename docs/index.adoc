@@ -2,7 +2,13 @@
 :page-title: IG Omega's Documents
 :page-description: IG Omega's Documents
 
-
+:page-layout: blogindex
+:page-tags: blog
+:keywords: Apache NetBeans blog index
+:description: Apache NetBeans blog index
+:toc: left
+:toc-title:
+:page-syntax: true
 
 {% for post in site.posts limit: 5 %}
 <a href=".{{ post.url }}">{{ post.navtitle }}</a>
