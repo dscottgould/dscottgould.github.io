@@ -19,15 +19,6 @@
 
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
-
-			<!-- link to other scripts -->
-			<script src="{{page.root}}/js/vendor/jquery.js"></script>
-			<script src="{{page.root}}/js/foundation.min.js"></script>
-			<script>
-				$(document).foundation();
-				var doc = document.documentElement;
-				doc.setAttribute('data-useragent', navigator.userAgent);
-			</script>
 		</head>
 		<body>
 			<nav>
@@ -52,5 +43,14 @@
 					<li><a href="https://www.linkedin.com/in/dscottgould/">Linkedin: https://www.linkedin.com/in/dscottgould/</a></li>
 				</ul>
 			</footer>
+
+			<!-- link to other scripts -->
+			<script src="{{page.root}}/js/vendor/jquery.js"></script>
+			<script src="{{page.root}}/js/foundation.min.js"></script>
+			<script>
+				$(document).foundation();
+				var doc = document.documentElement;
+				doc.setAttribute('data-useragent', navigator.userAgent);
+			</script>
 		</body>
 	</html>
