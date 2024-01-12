@@ -1,7 +1,6 @@
----
-layout: default
-title: IG Omega's Resume
----
+
+
+
 
 = IG Omega's Resume
 
