@@ -7,6 +7,6 @@ title: IG Omega's Documents
 
 	  {% for doc in site.documents %}
 	    <li><a href="{{ doc.url }}" title="{{ doc.title }}">{{ doc.title }}</a></li>
-		<span>{{ doc.date | date_to_string }}</span> » 
+		<span>Date Created: {{ doc.date | date_to_string }}</span>
 	  {% endfor %}
 	</ul>
