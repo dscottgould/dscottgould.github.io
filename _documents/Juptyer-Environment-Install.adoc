@@ -1,11 +1,12 @@
 //
 // Header
 //
-
-Publish Date: 1/11/204
-Donald Scott Gould <gould.dscott@gmail.com> 
 = Installing a Juptyer Environment on Native Windows
 :doctype: book
+:front-cover-image: image::images/cover.jpg[]
+:author: Donald Scott Gould 
+:email: gould.dscott@gmail.com
+:revdate: 01.11.2023
 :description: The document's description. 
 :sectanchors: 
 :url-repo: https://my-git-repo.com 
