@@ -3,8 +3,10 @@ layout: default
 title: IG Omega's Documents
 ---
 	<h1>{{ page.title }}</h1>
+	<ul class="documents">
 
-	{% for doc in site.documents %}
-		<a href="{{ doc.url }}" title="{{ doc.title }}">{{ doc.title }}</a>
+	  {% for doc in site.documents %}
+	    <a href="{{ doc.url }}" title="{{ doc.title }}">{{ doc.title }}</a></li>
 		<span>Last Updated: {{ doc.date | date_to_string }}</span>
-	{% endfor %}
+	  {% endfor %}
+	</ul>
