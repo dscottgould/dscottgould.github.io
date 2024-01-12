@@ -6,6 +6,7 @@ title: IG Omega's Documents
 	<ul class="documents">
 
 	  {% for doc in site.documents %}
-	    <li><span>{{ doc.date | date_to_string }}</span> » <a href="{{ doc.url }}" title="{{ doc.title }}">{{ doc.title }}</a></li>
+	    <li><a href="{{ doc.url }}" title="{{ doc.title }}">{{ doc.title }}</a></li>
+		<span>{{ doc.date | date_to_string }}</span> » 
 	  {% endfor %}
 	</ul>
