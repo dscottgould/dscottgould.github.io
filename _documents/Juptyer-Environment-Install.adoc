@@ -1,10 +1,9 @@
 = Installing a Juptyer Environment on Native Windows
-
 Gaa I hate linux…after fighting with this a few days, I’ve figured out how to get the GPU working in Jupyter with this project and Native Windows:
 
 == Tips:
-1)  Use Miniconda rather than Anaconda because Anaconda is so bloated with packages and crap you don’t need yet and it just takes forever to install and debug things on an older machine.
-2)  Remove any installations of Python, GIT or Anaconda and start with a clean environment - You can install anything you need again later.
+. Use Miniconda rather than Anaconda because Anaconda is so bloated with packages and crap you don’t need yet and it just takes forever to install and debug things on an older machine.
+. Remove any installations of Python, GIT or Anaconda and start with a clean environment - You can install anything you need again later.
 
 == Software Needed:
 https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe[Miniconda]
@@ -18,11 +17,14 @@ https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/Porta
 == Installation:
 . Open Miniconda’s Powershell Prompt.
 . Check that the environment can see your card with:
- [source, PowerShell]
- --
- nvidia-smi
- --
-  If it cannot see your card it may not be compatible or something else is wrong.
+
+[source, PowerShell]
+--
+nvidia-smi
+--
+NOTE: If it cannot see your card it may not be compatible or something else is wrong.
+
+[start=3]
 . Create a Python 3.9 Environment to install CUDA and Tensorflow 2.10.1:
 
 [source, PowerShell]
@@ -36,6 +38,97 @@ pip install "tensorflow<2.11"
 --
 
 This will also install any Visual Studio requirements as well automatically.
+
+[start=4]
+.  Check proper modules are installed:
+
+[source, PowerShell]
+--
+conda list
+--
+
+You should see:
+
+[source, output]
+--
+cudatoolkit           	11.2.2
+cudnn                 	8.1.0.77
+tensorflow            	2.10.1
+--
+
+NOTE: You need to see these exact versions or CUDA GPU will not work.
+(tensorflow-gpu is no longer needed in 2.10)
+
+[start=5]
+. Test tensorflow:
+
+[source, PowerShell]
+--
+python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+--
+
+
+You should see something like this:
+
+[source, output]
+--
+Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6611 MB memory:  -> device:   0, name: NVIDIA GeForce GTX 1080, pci bus id: 0000:01:00.0, compute capability: 6.1
+tf.Tensor(-377.56714, shape=(), dtype=float32)
+
+Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6611 MB memory:  -> device:   0, name: NVIDIA GeForce GTX 1080, pci bus id: 0000:01:00.0, compute capability: 6.1
+tf.Tensor(-377.56714, shape=(), dtype=float32)
+--
+
+Now run:
+[source, PowerShell]
+--
+python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+--
+
+You should see the GPU array populated:
+[source, output]
+--
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+--
+
+[start=6]
+. Install ipykernal and juptyer into your Python 2.9 Minconda environment:
+
+[source, PowerShell]
+--
+pip install ipykernal
+pip install juptyer  (Miniconda needs it installed)
+pip install opencv-python matplotlib (Requirements for Project)
+--
+[start=7]
+. Create virtual environment for Juptyer, TensorFlow and CUDA:
+
+[source, PowerShell]
+--
+cd to ImageClassification directory
+python -m venv imageclass
+python -m ipykernel install --name=imageclass
+--
+This will copy all the modules/libraries into the Juptyer environment.
+
+[start=7]
+. Activate the Juptyer environment:
+
+[source, PowerShell]
+--
+.\imageclass\Scripts\activate
+--
+You should see: 
+
+[source, output]
+--
+(imageclass) (tf) PS F:\AIWorkspace\ImageClassification>
+--
+As your prompt in Powershell - this is the proper environment for Jupyter
+Note if you try to test the GPU with above scripts, they will fail, but will work again once Jupyter is loaded.
+
+
+
 
 
 
