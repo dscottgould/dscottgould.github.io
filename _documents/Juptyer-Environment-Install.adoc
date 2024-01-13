@@ -1,11 +1,7 @@
 //
 // Header
 //
-THIS IS A TEST
-
-
-
-= Installing a Juptyer Environment on Native Windows
+== Installing a Juptyer Environment on Native Windows
 :doctype: book
 :front-cover-image: image::images/cover.jpg[]
 :author: Donald Scott Gould 
