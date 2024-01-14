@@ -1,0 +1,16 @@
+//
+// Installing a Juptyer Environment on Native Windows
+//
+= AsciiDoc 101
+// Allows you to use = more than once
+:doctype: book
+// Shows Title on AsciiDoc Page
+:showtitle:
+// Sets to use icons from fonts
+:icons: font
+// Sets Browser Title and Title generated on Docs Page
+:page-title: AsciiDoc 101  
+:page-description: Page Desc
+// :source-highlighter: coderay
+
+

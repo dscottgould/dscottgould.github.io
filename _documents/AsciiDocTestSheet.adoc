@@ -1,0 +1,56 @@
+= AsciiDoc Test Sheet
+:doctype: book
+:showtitle:
+:icons: font
+:page-title: AsciiDoc Test Sheet
+:page-description: Page Desc
+:source-highlighter: coderay
+
+[source, JavaScript]
+--
+let myVar = 'Linux Sux';
+
+function myFunction() {
+    alert(myVar);
+};
+--
+
+[source, HTML]
+--
+<div>Linux Sux</div>
+--
+
+[,ruby]
+----
+puts 'Hello, World!'
+----
+
+
+
+
+
+
+// :coderay-linenums-mode: inline
+// :coderay-css: class
+
+// :note-caption: :paperclip:
+// :tip-caption: :bulb:
+// :note-caption: :information_source:
+// :important-caption: :heavy_exclamation_mark:
+// :caution-caption: :fire:
+// :warning-caption: :warning:
+// :page-title: Jekyll AsciiDoc Quickstart
+
+NOTE: This is a note.
+
+WARNING: This is a warning.
+
+IMPORTANT: This is important.
+
+TIP: This is a tip.
+
+HOUSE: This is a house.
+
+
+
+WARNING: If it cannot see your card it may not be compatible or something else is wrong.
