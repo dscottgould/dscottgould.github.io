@@ -1,15 +1,51 @@
 //
 // Header
 //
-== Installing a Juptyer Environment on Native Windows
+= Congratulations!
+
+:showtitle:
+:icons: font
+:note-caption: :paperclip:
+:page-title: Jekyll AsciiDoc Quickstart
+:page-description: A forkable blog-ready Jekyll site using AsciiDoc
 :doctype: book
-:front-cover-image: image::images/cover.jpg[]
-:author: Donald Scott Gould 
-:email: gould.dscott@gmail.com
-:revdate: 01.11.2023
-:description: The document's description. 
-:sectanchors: 
-:url-repo: https://my-git-repo.com 
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+
+
+Why isnt the title showing
+
+NOTE: This is a note.
+
+WARNING: This is a warning.
+
+IMPORTANT: This is important.
+
+TIP: This is a tip.
+
+HOUSE: This is a house.
+
+
+
+
+
+== Installing a Juptyer Environment on Native Windows
+
+This is a test
+
+
+//:icons: font
+//:doctype: book
+//:front-cover-image: image::images/cover.jpg[]
+//:author: Donald Scott Gould 
+//:email: gould.dscott@gmail.com
+//:revdate: 01.11.2023
+//:description: The document's description. 
+//:sectanchors: 
+//:url-repo: https://my-git-repo.com 
 
 Gaa I hate linux…after fighting with this a few days, I’ve figured out how to get the GPU working in Jupyter with this project and Native Windows:
 
